@@ -1,0 +1,14 @@
+POST http://localhost:9095/api/client
+Content-Type: application/x-www-form-urlencoded
+
+clientOs=Windows Windows 8.1 Chrome Windows Windows 10 Chrome 86.0.4240.198
+
+
+
+###
+GET http://localhost:8081/client/1606125741587
+
+
+###
+GET http://localhost:8081/client/update-client/1606125741587
+Content-Type: application/x-www-form-urlencoded
