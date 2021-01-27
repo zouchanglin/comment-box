@@ -5,7 +5,7 @@ server:
 spring:
     mail:
         username: zchanglin@163.com
-        password: ZLRBBNVYGEWHJGRW
+        password: xxxxxxxxxx
         host: smtp.163.com
         port: 465
         protocol: smtp
@@ -24,9 +24,9 @@ spring:
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
         name: defaultDataSource
-        password: '123456'
-        url: jdbc:mysql://127.0.0.1:3306/comment-box?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8&useSSL=false
-        username: 'root'
+        password: 'xxxxxx'
+        url: jdbc:mysql://127.0.0.1:3306/comment_box?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+        username: 'xxxxxx'
     freemarker:
         template-loader-path: classpath:/templates
         cache: false

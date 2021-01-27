@@ -1,6 +1,8 @@
 package cn.tim.commentbox.service.impl;
 
 import cn.tim.commentbox.entity.ClientInfo;
+import cn.tim.commentbox.enums.ResultEnum;
+import cn.tim.commentbox.exception.CommentBoxException;
 import cn.tim.commentbox.form.ClientForm;
 import cn.tim.commentbox.repository.ClientInfoRepository;
 import cn.tim.commentbox.service.ClientService;
@@ -64,6 +66,8 @@ public class ClientServiceImpl implements ClientService {
             clientVO.setClientEmail(info.getClientEmail());
             clientVO.setClientName(info.getClientName());
             clientVO.setClientIcon(info.getClientIcon());
+        }else {
+            throw new CommentBoxException(ResultEnum.FAILED);
         }
         return clientVO;
     }
